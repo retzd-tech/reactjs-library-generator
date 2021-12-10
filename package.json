@@ -1,0 +1,29 @@
+{
+    "name": "reactjs-library-generator",
+    "version": "0.0.8",
+    "description": "React Js Library Generator CLI",
+    "bin": {
+        "react-library": "./bin/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "preferGlobal": true,
+    "dependencies": {
+        "colors": "^1.4.0",
+        "commander": "^8.1.0",
+        "inquirer": "^8.1.2"
+    },
+    "devDependencies": {
+        "husky": "^7.0.2",
+        "jest": "^27.2.2"
+    },
+    "scripts": {
+        "test": "jest --coverage"
+    },
+    "jest": {
+        "moduleNameMapper": {
+            "^@generate/(.*)$": "<rootDir>/$1"
+        }
+    }
+}
